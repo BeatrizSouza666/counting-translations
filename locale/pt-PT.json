@@ -1,2 +1,86 @@
 {
+    "countProcess.failReason.numbersOnly": "Esse canal de contagem está no modo apenas números.",
+    "countProcess.failReason.doubleCount": "**Você não pode contar dois números em sequência!**",
+    "countProcess.failReason.wrongNumber": "**Número errado.**",
+    "countProcess.warning.wrongNumberAlreadyZero": "Número incorreto! O próximo número é `1`. **Nenhuma das estatísticas foram alteradas desde que o número era 0.**",
+    "countProcess.warning.memberSaveUsed": "⚠ <@{authorId}> Você usou **1** de seus saves. Você possui **{savesLeft}** saves restando. O próximo número é **{nextNumber}.**",
+    "countProcess.warning.guildSaveUsed": "⚠ <@{authorId}> Você usou **1** save de servidor! Você possui **{savesLeft}/2** saves de servidor restando. O próximo número é **{nextNumber}.**",
+    "countProcess.failAlert.embedDescription": "Vote [aqui](https://counting.duckgroup.xyz/vote) para ganhar saves e continuar contando. Veja `c!ajuda`.",
+    "countProcess.failAlert.messageContent": "<@{authorId}> ARRUINOU TUDO EM **{number}**!! O próximo número é **1**. {failReason}",
+
+
+    "messageDeleted.messageContent": "<@{memberId}> deletou sua contagem com o número `{currentNumber}`. O próximo número é `{nextNumber}`.",
+
+
+    "commands.generic.error.embedTitle": "Erro.",
+    "commands.generic.error.missingAdministrator": "<@{authorId}> Você precisa ter permissões de `Administrador` para usar esse comando.",
+    "commands.generic.error.authorNotFoundInDatabase": "Você não contou ainda.",
+    "commands.generic.error.userNotFoundInDatabase": "Usuário especificado não encontrado na base de dados. (Talvez não contou ainda?)",
+    "commands.generic.error.badUserConversion": "Não é possível encontrar o usuário especificado: `{arg}`",
+    "commands.generic.enabled": "habilitado",
+    "commands.generic.disabled": "desabilitado",
+
+    "commands.stats.embedTitle": "Estatísticas do bot",
+    "commands.stats.embedField.global.name": "Global",
+    "commands.stats.embedField.global.value": "**Total de servidores:** `{guilds}`\n**Total Bot Shards:** `{shards}`\n**Current MPS:** `{mps}`",
+    "commands.stats.embedField.shard.name": "This Shard (ID `{shardId}`)",
+    "commands.stats.embedField.shard.value": "**Guilds On Shard:** `{guilds}`\n**Shard Started:** `{uptime}`\n**Current MPS:** `{mps}`",
+
+    "commands.help.embedDescription": "__helpMessage__",
+    "commands.help.embedFooter": "Feito por Duck#0001, mantido por tt2468#2468 | Servidores: {guilds:,d} | Uptime: {uptime:,d}s",
+
+    "commands.channel.content": "<@{authorId}> O canal de contagem foi atualizado para esse canal.",
+
+    "commands.user.embedField.global.name": "Estatísticas globais",
+    "commands.user.embedField.global.value": "Porcentagem correta: **{correctRate}**\nTotal correto: **{totalCorrect:,d}**\nTotal incorreto: **{totalIncorrect:,d}**\nPontuação: **{score:,d} (#{rank:,d})**\nSaves: **{saves:g}/{saveSlots:g}**",
+    "commands.user.embedField.local.name": "Estatísticas em `{guildName}`",
+    "commands.user.embedField.local.value": "Porcentagem correta: **{correctRate}**\nTotal correto: **{totalCorrect:,d}**\nTotal incorreto: **{totalIncorrect:,d}**\nÚltima atividade: **{lastActive}**\nMaior número válido contado: **{highestCount:,d} ({highestCountTime})**\nSaves Usados: **{savesUsed:,d}**",
+
+    "commands.server.embedTitle": "Informações de `{guildName}`",
+    "commands.server.embedDescription": "Número atual: **{currentNumber:,d}**\nÚltimo contado por: <@{lastMember}>\nSaves de servidor: **{guildSaves}/2**\nMaior pontuação: **{highScore:,d} ({highScoreTime})**\nRank: **{currentRank:,d}/{totalGuildEntries:,d}**\nSaves Usados: **{savesUsed:,d}**\nModo apenas números: **{numbersOnly}**",
+
+    "commands.lb.embedTitle": "*MAIORES PONTUAÇÕES*",
+    "commands.lb.embedFooter": "c!ajuda | Página {page}",
+
+    "commands.cs.embedTitle": "*PONTUAÇÕES ATUAIS*",
+    "commands.cs.embedFooter": "c!ajuda | Página {page}",
+
+    "commands.ulb.embedTitle": "*TOP DE USUÁRIOS*",
+    "commands.ulb.embedFooter": "c!ajuda | Página {page}",
+
+    "commands.slb.embedTitle": "*TOP DE USUÁRIOS EM `{guildName}`*",
+    "commands.slb.embedFooter": "c!ajuda | Página {page}",
+
+    "commands.donatesave.embedTitle": "Save doado!",
+    "commands.donatesave.embedDescription": "`{donatedSaves}` foram doados ao servidor, adicionando `{addedSaves}` aos saves, para o total de `{guildSaves}/2` saves de servidor. (1 Save de servidor = 5 Sabes de usuário)\n\nVocê tem `{memberSaves}` saves restando.",
+    "commands.donatesave.error.notEnoughSaves": "Você precisa ter pelo menos `1` save em estoque para doar.",
+    "commands.donatesave.error.maxSavesReached": "Esse servidor já possui o máximo de saves acumulados! (2)",
+
+    "commands.transfersave.embedTitle": "Save transferido!",
+    "commands.transfersave.embedDescription": "You have transferred `{transferredSaves}` saves to <@{targetId}>. `{deductedSaves}` saves have been deducted from your account.\n\nYou have `{savesLeft}` saves left.",
+    "commands.transfersave.error.noTargetSpecified": "You must specify a user to give a save to.",
+    "commands.transfersave.error.notEnoughSaves": "You need to have at least `1.5` saves in order to transfer.",
+    "commands.transfersave.error.cannotSelfTransfer": "You cannot transfer saves to yourself!",
+    "commands.transfersave.error.targetHasMaxSaves": "Target user already has maximum amount of saves!",
+
+    "commands.failrole.roleDisabledMessage": "O cargo de falha foi desabilitado.",
+    "commands.failrole.roleEnabledMessage": "O cargo de falha foi atualizado. ID: `{roleId}` | Nome do cargo: `{roleName}`",
+    "commands.failrole.error.botMissingPermissions": "Eu não possuo a permissão `manage_roles`.",
+    "commands.failrole.error.roleNotFound": "Não foi possível encontrar esse cargo: `{arg}`",
+    "commands.failrole.error.cannotApplyRole": "Cargo encontrado `{arg}` mas eu não possuo permissão de aplicá-lo. Tente mover o cargo para mais baixo na lista.",
+
+    "commands.numbersonly.embedTitle": "Modo apenas números foi {state}.",
+    "commands.numbersonly.error.missingModeArgument": "<@{authorId}> Você precisa especificar um modo. Modos: `enable`, `disable`.",
+    "commands.numbersonly.error.invalidMode": "<@{authorId}> Modos válidos não encontrados. Modos: `enable`, `disable`.",
+
+    "commands.vote.embedDescription": "{descriptionPretext} Você possui **{saves:g}/{saveSlots:g}** saves.\n[Clique aqui para votar.](https://discordbots.org/bot/510016054391734273/vote)",
+    "commands.vote.canVote": "✅ Você pode votar agora.\n",
+    "commands.vote.cannotVote": "❌ Você já votou.\n Você pode votar novamente em **{hoursLeft:g} horas**.\n",
+
+    "commands.language.embedTitle": "O idioma do bot foi mudado para `{arg}` em seu servidor.",
+    "commands.language.argumentMissing.embedTitle": "Idiomas disponíveis:",
+    "commands.language.argumentMissing.embedDescription": "Use o código de idioma correspondente em seu comando para setar o idioma do bot no seu servidor. `c!idioma [code]`",
+    "commands.language.argumentMissing.embedField.codes.name": "Código de idioma",
+    "commands.language.argumentMissing.embedField.descriptions.name": "Descrição",
+    "commands.language.error.invalidCode": "Código de idioma desconhecido: `{arg}`"
 }
